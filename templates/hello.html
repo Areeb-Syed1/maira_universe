@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="page center">
+
+    
+
+    <!-- GIF 1 - Top Left -->
+    <img src="{{ url_for('static', filename='stickers/kitty1.gif') }}"
+         class="sticker"
+         style="top:10%; left:8%; width:350px;">
+
+    <!-- GIF 2 - Top Right -->
+    <img src="{{ url_for('static', filename='stickers/kitty2.gif') }}"
+         class="sticker"
+         style="top:15%; right:8%; width:255px;">
+
+    <!-- GIF 3 - Bottom Right -->
+    <img src="{{ url_for('static', filename='stickers/sparkle.gif') }}"
+         class="sticker"
+         style="bottom:12%; right:15%; width:250px;">
+
+
+   <div class="photo-wrapper">
+    <div class="photo-ring">
+        <img src="{{ url_for('static', filename='maira.jpeg') }}" alt="Maira">
+    </div>
+</div>
+
+
+    <h2>Hello Kitty’s Favorite Girl 🎀</h2>
+    <p>You don’t just love Hello Kitty...</p>
+    <p>You belong in her pastel universe.</p>
+
+    <a href="/soul">
+    <button>Next 🌸</button>
+</a>
+
+</div>
+
+{% endblock %}
